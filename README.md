@@ -23,7 +23,7 @@ This is a fully-functional [functional][5] lexicographic permutation [generator]
 ```javascript
 #!/usr/bin/env node
 
-const lexicographer = require('../');
+const lexicographer = require('lexicographer');
 const array = [...Array(10).keys()];
 const breakpoint = 1000000;
 let permutations = 0;

@@ -1,6 +1,6 @@
 {
   "name": "lexicographic-generator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A fully-functional functional lexicographic permutation generator generator.",
   "main": "lexicographer.js",
   "scripts": {
