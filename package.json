@@ -1,14 +1,34 @@
 {
   "name": "lexicographic-generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "A fully-functional functional lexicographic permutation generator generator.",
   "main": "lexicographer.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --harmony test/test.js"
   },
   "author": "Mark Grealish <mark@bhalash.com> (https://www.bhalash.com)",
   "license": "MIT",
   "devDependencies": {
     "tape": "^4.6.2"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhalash/lexicographer.git"
+  },
+  "keywords": [
+    "lexicographic",
+    "permute",
+    "euler",
+    "permutation",
+    "generator",
+    "generate",
+    "iterate"
+  ],
+  "bugs": {
+    "url": "https://github.com/bhalash/lexicographer/issues"
+  },
+  "homepage": "https://github.com/bhalash/lexicographer#readme"
 }
