@@ -1,0 +1,14 @@
+{
+  "name": "lexicographic-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lexicographer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mark Grealish <mark@bhalash.com> (https://www.bhalash.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "tape": "^4.6.2"
+  }
+}
