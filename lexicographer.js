@@ -23,6 +23,8 @@ const Lexicographer = function() {};
  */
 
 function findLastIndex(array, predicate, index) {
+    'use strict';
+
     if (!Number.isInteger(index)) {
         index = array.length - 1;
     }
