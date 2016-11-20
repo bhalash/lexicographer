@@ -61,7 +61,7 @@ function findLastIndex(array, predicate, index) {
 Lexicographer.prototype.permute = function*(array) {
     'use strict';
 
-    let pivot, largest, successor;
+    let pivot, largest, successor, temp;
     array = array.slice();
 
     while (pivot !== -1) {
@@ -84,7 +84,9 @@ Lexicographer.prototype.permute = function*(array) {
         });
 
         // 4. Swap the pivot and successor.
-        [array[pivot], array[successor]] = [array[successor], array[pivot]];
+        temp = array[pivot];
+        array[pivot] = array[successor];
+        array[successor] = temp;
 
         // 5. Reverse the array after the pivot.
         array = array.slice(0, largest).concat(array.slice(largest).reverse());
