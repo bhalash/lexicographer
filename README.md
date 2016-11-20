@@ -18,21 +18,7 @@ This is a fully-functional [functional][5] lexicographic permutation [generator]
     npm run test
 
 ## Usage
-
-```javascript
-const lexicographer = require('lexicographer');
-
-let permuter = lexicographer.permute([0, 1, 2]),
-    next = permuter.next();
-
-while (!next.done) {
-    console.log(next.value);
-    next = permuter.next();
-}
-```
-
-## To Solve Project Euler Problem #24
-Run [project_euler_solution.js][10] or paste this into a file:
+(This also solves [problem 24][3].)
 
 ```javascript
 #!/usr/bin/env node
