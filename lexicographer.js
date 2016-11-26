@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * Lexicographic permutation generator.
  *
@@ -23,8 +25,6 @@ const Lexicographer = function() {};
  */
 
 function findLastIndex(array, predicate, index) {
-    'use strict';
-
     if (!Number.isInteger(index)) {
         index = array.length - 1;
     }
@@ -59,8 +59,6 @@ function findLastIndex(array, predicate, index) {
  */
 
 Lexicographer.prototype.permute = function*(array) {
-    'use strict';
-
     let pivot, largest, successor, temp;
     array = array.slice();
 
