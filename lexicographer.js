@@ -86,8 +86,11 @@ Lexicographer.prototype.permute = function*(array) {
         array[pivot] = array[successor];
         array[successor] = temp;
 
-        // 5. Reverse the array after the pivot.
-        array = array.slice(0, largest).concat(array.slice(largest).reverse());
+        array = [
+            // 5. Reverse the array after the pivot.
+            ...array.slice(0, largest),
+            ...array.slice(largest).reverse()
+        ];
     }
 };
 
